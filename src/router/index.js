@@ -17,7 +17,22 @@ export default new Router({
         {
           path: '/dashboard',
           component: resolve => require(['../views/Dashboard.vue'], resolve),
-          meta: {title: '首页'}
+          meta: {title: '系统首页'}
+        },
+        {
+          path: '/table',
+          component: resolve => require(['../views/Table.vue'], resolve),
+          meta: {title: '表格'}
+        },
+        {
+          path: '/tabs',
+          component: resolve => require(['../views/Tabs.vue'], resolve),
+          meta: {title: 'tab标签'}
+        },
+        {
+          path: '/form',
+          component: resolve => require(['../views/Form.vue'], resolve),
+          meta: {title: '表单'}
         }
       ]
     },
